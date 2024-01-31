@@ -9,7 +9,8 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/stone-cloth-knife"
+        "outputPath": "dist/stone-cloth-knife",
+        "base": "https://wordpressballer.com/stone-cloth-knife/"
       },
       "configurations": {
         "development": {
