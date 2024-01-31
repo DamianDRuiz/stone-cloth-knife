@@ -7,6 +7,7 @@ Userfront.init('vbq8rjzn');
 const reload = () => setTimeout(() => document.location.reload(), 500);
 
 const Home = () => {
+  const path = import.meta.env.VITE_PATH;
   return (
     <>
       <div>Hi {userData.email ? userData.email : ''} </div>
@@ -17,10 +18,10 @@ const Home = () => {
       ) : (
         <>
           <div>
-            <Link to="/stone-cloth-knife/signup">Sign Up</Link>
+            <Link to={`${path}signup`}>Sign Up</Link>
           </div>
           <div>
-            <Link to="/stone-cloth-knife/login">Log In</Link>
+            <Link to={`${path}login`}>Log In</Link>
           </div>
         </>
       )}

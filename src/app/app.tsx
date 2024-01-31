@@ -5,12 +5,13 @@ import LogIn from '../Pages/login';
 import SignUp from '../Pages/signup';
 
 export function App() {
+  const path = import.meta.env.VITE_PATH;
   return (
     <>
       <Routes>
-        <Route path="/stone-cloth-knife/" element={<Home />} />
-        <Route path="/stone-cloth-knife/signup" element={<SignUp />} />
-        <Route path="/stone-cloth-knife/login" element={<LogIn />} />
+        <Route path="/" element={<Home />} />
+        <Route path={`${path}signup`} element={<SignUp />} />
+        <Route path={`${path}login`} element={<LogIn />} />
       </Routes>
     </>
   );
