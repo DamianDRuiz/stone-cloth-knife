@@ -17,10 +17,10 @@ const Home = () => {
       ) : (
         <>
           <div>
-            <Link to="/signup">Sign Up</Link>
+            <Link to="/stone-cloth-knife/signup">Sign Up</Link>
           </div>
           <div>
-            <Link to="/login">Log In</Link>
+            <Link to="/stone-cloth-knife/login">Log In</Link>
           </div>
         </>
       )}
