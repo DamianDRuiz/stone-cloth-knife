@@ -1,7 +1,6 @@
 //@ts-ignore
 import Userfront, { LogoutButton } from '@userfront/toolkit/react';
 import { Link, Navigate, useLocation } from 'react-router-dom';
-Userfront.init('wn989qpb');
 const userData = Userfront.user;
 Userfront.init('vbq8rjzn');
 

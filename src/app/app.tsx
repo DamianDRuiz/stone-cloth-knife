@@ -12,7 +12,6 @@ export function App() {
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<LogIn />} />
-        <Route path="/logout" element={<LogOut />} />
       </Routes>
     </>
   );
