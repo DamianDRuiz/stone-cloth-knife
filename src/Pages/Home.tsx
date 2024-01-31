@@ -1,16 +1,19 @@
 //@ts-ignore
-import Userfront from '@userfront/toolkit/react';
+import Userfront, { LogoutButton } from '@userfront/toolkit/react';
 import { Link, Navigate, useLocation } from 'react-router-dom';
 Userfront.init('wn989qpb');
 const userData = Userfront.user;
+Userfront.init('vbq8rjzn');
+
+const reload = () => setTimeout(() => document.location.reload(), 500);
 
 const Home = () => {
   return (
     <>
       <div>Hi {userData.email ? userData.email : ''} </div>
       {Userfront.tokens.accessToken ? (
-        <div>
-          <Link to="/logout">Log Out</Link>
+        <div className="logout" onClick={reload}>
+          <LogoutButton />
         </div>
       ) : (
         <>
