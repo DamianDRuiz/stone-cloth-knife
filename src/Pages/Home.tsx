@@ -15,8 +15,8 @@ const Home = () => {
 };
 
 const Game = () => {
-  const [p1Move, usep1Move] = useState<Move | null>(null);
-  const [p2Move, usep2Move] = useState<Move | null>(null);
+  const [p1Move, usep1Move] = useState<Move>(null);
+  const [p2Move, usep2Move] = useState<Move>(null);
   const [turn, useTurn] = useState<Turn>('1');
 
   const handleClick = (choice: Move) => {
@@ -86,7 +86,7 @@ const MoveChoice = ({ choice, onClick }: { choice: Move; onClick: any }) => {
   );
 };
 
-type Move = 'rock' | 'paper' | 'scissors';
+type Move = null | 'rock' | 'paper' | 'scissors';
 
 type Turn = '1' | '2';
 
