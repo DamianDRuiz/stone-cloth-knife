@@ -2,7 +2,7 @@ import Userfront, { LogoutButton } from '@userfront/toolkit';
 import { Link } from 'react-router-dom';
 import styles from './NavBar.module.scss';
 
-const NavBar = ({ userData }) => {
+const NavBar = ({ userData }: { userData: Userfront.User }) => {
   const reload = () => setTimeout(() => document.location.reload(), 500);
   const path = import.meta.env.VITE_PATH;
   return (
