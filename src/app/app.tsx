@@ -9,7 +9,7 @@ export function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path={`${path}`} element={<Home />} />
         <Route path={`${path}signup`} element={<SignUp />} />
         <Route path={`${path}login`} element={<LogIn />} />
       </Routes>
