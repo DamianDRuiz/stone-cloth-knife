@@ -1,5 +1,4 @@
-//@ts-ignore
-import Userfront, { LogoutButton } from '@userfront/toolkit/react';
+import Userfront, { LogoutButton } from '@userfront/toolkit';
 import { Link, Navigate, useLocation } from 'react-router-dom';
 const userData = Userfront.user;
 Userfront.init('vbq8rjzn');
